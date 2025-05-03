@@ -12,6 +12,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
+/* 
+ * This is a custom Tailwind utility class that adds a grid background to an element.
+ * Its a placeholder for a more complex interactive grid used later in the app.
+ * TODO: Remove this and use a more complex grid background.
+ */
 @layer utilities {
   .grid-bg::before {
     content: '';

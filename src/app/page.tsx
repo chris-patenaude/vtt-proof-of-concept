@@ -43,13 +43,13 @@ export default function VTT() {
   };
 
   return (
-    <div className="h-screen flex flex-col">
+    <div className="flex flex-col h-screen">
       {/* Top bar */}
-      <header className="h-10 bg-gray-200 flex items-center px-3 shrink-0">
-        <h1 className="text-sm font-semibold">My VTT PoC</h1>
+      <header className="h-10 bg-gray-200 flex items-center px-3 shrink-0 text-gray-500">
+        <h1 className="text-sm font-semibold">VTT Proof of Concept</h1>
       </header>
 
-      <main className="flex flex-1">
+      <main className="flex flex-1 text-gray-500">
         {/* Map */}
         <section id="map-wrapper" className="relative flex-1 bg-gray-50 grid-bg">
           <canvas ref={canvasRef} className="absolute inset-0 w-full h-full" />
@@ -84,7 +84,7 @@ export default function VTT() {
                   </li>
                 ))
               ) : (
-                <p className="text-sm text-gray-500">No turns yet</p>
+                <p className="text-sm">No turns yet</p>
               )}
             </ol>
           </div>
@@ -128,6 +128,7 @@ export default function VTT() {
 
       {/* Command bar */}
       <footer className="h-10 bg-gray-200 flex items-center px-2 shrink-0">
+        {/* Placeholder for now */}
         <input
           className="flex-1 px-2 py-1 border border-gray-300 rounded"
           placeholder="Command line – e.g. /roll 2d20kh"
